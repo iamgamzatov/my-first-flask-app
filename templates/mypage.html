@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 14px 28px;
+            text-decoration: none;
+            color: white;
+            background: #2563eb;
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <img src="{{ url_for('static', filename='me.jpg') }}" alt="Моё фото">
+
+    <h1>Привет! 👋</h1>
+
+    <p>
+        Меня зовут <b>Расул</b>.<br><br>
+
+        Я изучаю программирование и создаю сайты с помощью
+        <b>Python</b> и <b>Flask</b>.
+
+        Мне нравится разрабатывать веб-приложения, изучать новые технологии
+        и постоянно совершенствовать свои навыки.
+    </p>
+
+    <div class="buttons">
+        <a href="https://github.com/iamgamzatov" class="btn">GitHub</a>
+        <a href="mailto:iamgamzatov@gmail.com" class="btn">Связаться</a>
+    </div>
+
+</div>
+
+</body>
+</html>
